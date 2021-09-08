@@ -1,0 +1,76 @@
+G:\MVC\Shoping Cart\Shoping Cart\bin\Shoping Cart.dll.config
+G:\MVC\Shoping Cart\Shoping Cart\bin\Shoping Cart.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\Shoping Cart.pdb
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\csc.exe
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\csc.exe.config
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\csc.rsp
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\csi.exe
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\csi.exe.config
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\csi.rsp
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\Microsoft.Managed.Core.targets
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\Microsoft.Win32.Primitives.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\System.AppContext.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\System.Collections.Immutable.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\System.Console.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\System.Diagnostics.StackTrace.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\System.Globalization.Calendars.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\System.IO.Compression.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\System.IO.Compression.ZipFile.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\System.IO.FileSystem.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\System.IO.FileSystem.Primitives.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\System.Net.Http.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\System.Net.Sockets.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\System.Reflection.Metadata.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\System.Security.Cryptography.Encoding.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\System.Security.Cryptography.Primitives.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\System.Text.Encoding.CodePages.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\System.Threading.Tasks.Extensions.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\System.ValueTuple.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\System.Xml.ReaderWriter.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\System.Xml.XmlDocument.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\System.Xml.XPath.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\System.Xml.XPath.XDocument.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\vbc.exe
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\vbc.exe.config
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\vbc.rsp
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\VBCSCompiler.exe
+G:\MVC\Shoping Cart\Shoping Cart\bin\roslyn\VBCSCompiler.exe.config
+G:\MVC\Shoping Cart\Shoping Cart\bin\EntityFramework.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\EntityFramework.SqlServer.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\Microsoft.Web.Infrastructure.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\System.Web.Helpers.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\System.Web.Mvc.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\System.Web.Razor.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\System.Web.Webpages.Deployment.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\System.Web.Webpages.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\System.Web.Webpages.Razor.dll
+G:\MVC\Shoping Cart\Shoping Cart\bin\EntityFramework.xml
+G:\MVC\Shoping Cart\Shoping Cart\bin\EntityFramework.SqlServer.xml
+G:\MVC\Shoping Cart\Shoping Cart\bin\System.Web.Razor.xml
+G:\MVC\Shoping Cart\Shoping Cart\bin\System.Web.Webpages.xml
+G:\MVC\Shoping Cart\Shoping Cart\bin\System.Web.Webpages.Deployment.xml
+G:\MVC\Shoping Cart\Shoping Cart\bin\System.Web.Webpages.Razor.xml
+G:\MVC\Shoping Cart\Shoping Cart\bin\System.Web.Helpers.xml
+G:\MVC\Shoping Cart\Shoping Cart\bin\System.Web.Mvc.xml
+G:\MVC\Shoping Cart\Shoping Cart\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\MVC\Shoping Cart\Shoping Cart\obj\Debug\Shoping Cart.csprojAssemblyReference.cache
+G:\MVC\Shoping Cart\Shoping Cart\obj\Debug\Shoping Cart.csproj.CoreCompileInputs.cache
+G:\MVC\Shoping Cart\Shoping Cart\obj\Debug\Shoping Cart.csproj.CopyComplete
+G:\MVC\Shoping Cart\Shoping Cart\obj\Debug\Shoping Cart.dll
+G:\MVC\Shoping Cart\Shoping Cart\obj\Debug\Shoping Cart.pdb

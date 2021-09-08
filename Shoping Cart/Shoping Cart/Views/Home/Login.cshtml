@@ -1,0 +1,35 @@
+﻿
+@model Shoping_Cart.tbluser
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-sm-6 col-sm-offset-3">
+    <center> <h2>Login Here</h2></center>
+
+    <table class="table">
+        @{
+            Html.BeginForm("Index", "Admin", FormMethod.Post);
+            <tr>
+                <td>User Name: </td>
+                <td> @Html.TextBoxFor(a => a.uname)</td>
+            </tr>
+            
+            
+            <tr>
+                <td>Password: </td>
+                <td> @Html.PasswordFor(a => a.upass)</td>
+            </tr>
+            
+            <tr>
+                <td> @ViewBag.msg</td>
+                <td> <input type="submit" value="Login" /></td>
+            </tr>
+            
+        }
+    </table>
+    </div>
+
+
+

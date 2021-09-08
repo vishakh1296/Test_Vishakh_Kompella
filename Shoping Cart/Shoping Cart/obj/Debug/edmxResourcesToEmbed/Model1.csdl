@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="myshopDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tblcategory">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="tblcategory1" Relationship="Self.FK_tblcategory_tblcategory" FromRole="tblcategory" ToRole="tblcategory1" />
+    <NavigationProperty Name="tblcategory2" Relationship="Self.FK_tblcategory_tblcategory" FromRole="tblcategory1" ToRole="tblcategory" />
+    <NavigationProperty Name="tblproducts" Relationship="Self.FK_tblproduct_tblcategory" FromRole="tblcategory" ToRole="tblproduct" />
+  </EntityType>
+  <EntityType Name="tblimage">
+    <Key>
+      <PropertyRef Name="iid" />
+    </Key>
+    <Property Name="iid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="iname" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="pid" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tblproduct" Relationship="Self.FK_tblimages_tblproduct" FromRole="tblimages" ToRole="tblproduct" />
+  </EntityType>
+  <EntityType Name="tblorderdetail">
+    <Key>
+      <PropertyRef Name="did" />
+    </Key>
+    <Property Name="did" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="oid" Type="Int32" Nullable="false" />
+    <Property Name="pid" Type="Int32" Nullable="false" />
+    <Property Name="pprice" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="pqty" Type="Int32" Nullable="false" />
+    <Property Name="pamount" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <NavigationProperty Name="tblorder" Relationship="Self.FK_tblorderdetails_tblorders" FromRole="tblorderdetails" ToRole="tblorders" />
+    <NavigationProperty Name="tblproduct" Relationship="Self.FK_tblorderdetails_tblproduct" FromRole="tblorderdetails" ToRole="tblproduct" />
+  </EntityType>
+  <EntityType Name="tblorder">
+    <Key>
+      <PropertyRef Name="oid" />
+    </Key>
+    <Property Name="oid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="odate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="opname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="opphone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="opaddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="opsaddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="oamount" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="ostatus" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tblorderdetails" Relationship="Self.FK_tblorderdetails_tblorders" FromRole="tblorders" ToRole="tblorderdetails" />
+  </EntityType>
+  <EntityType Name="tblproduct">
+    <Key>
+      <PropertyRef Name="pid" />
+    </Key>
+    <Property Name="pid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="pprice" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="pdetails" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cid" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tblcategory" Relationship="Self.FK_tblproduct_tblcategory" FromRole="tblproduct" ToRole="tblcategory" />
+    <NavigationProperty Name="tblimages" Relationship="Self.FK_tblimages_tblproduct" FromRole="tblproduct" ToRole="tblimages" />
+    <NavigationProperty Name="tblorderdetails" Relationship="Self.FK_tblorderdetails_tblproduct" FromRole="tblproduct" ToRole="tblorderdetails" />
+  </EntityType>
+  <EntityType Name="tbluser">
+    <Key>
+      <PropertyRef Name="uid" />
+    </Key>
+    <Property Name="uid" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="uname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="upass" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_tblcategory_tblcategory">
+    <End Role="tblcategory" Type="Self.tblcategory" Multiplicity="1" />
+    <End Role="tblcategory1" Type="Self.tblcategory" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="tblcategory">
+        <PropertyRef Name="cid" />
+      </Principal>
+      <Dependent Role="tblcategory1">
+        <PropertyRef Name="cid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblproduct_tblcategory">
+    <End Role="tblcategory" Type="Self.tblcategory" Multiplicity="1" />
+    <End Role="tblproduct" Type="Self.tblproduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblcategory">
+        <PropertyRef Name="cid" />
+      </Principal>
+      <Dependent Role="tblproduct">
+        <PropertyRef Name="cid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblimages_tblproduct">
+    <End Role="tblproduct" Type="Self.tblproduct" Multiplicity="1" />
+    <End Role="tblimages" Type="Self.tblimage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblproduct">
+        <PropertyRef Name="pid" />
+      </Principal>
+      <Dependent Role="tblimages">
+        <PropertyRef Name="pid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblorderdetails_tblorders">
+    <End Role="tblorders" Type="Self.tblorder" Multiplicity="1" />
+    <End Role="tblorderdetails" Type="Self.tblorderdetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblorders">
+        <PropertyRef Name="oid" />
+      </Principal>
+      <Dependent Role="tblorderdetails">
+        <PropertyRef Name="oid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblorderdetails_tblproduct">
+    <End Role="tblproduct" Type="Self.tblproduct" Multiplicity="1" />
+    <End Role="tblorderdetails" Type="Self.tblorderdetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblproduct">
+        <PropertyRef Name="pid" />
+      </Principal>
+      <Dependent Role="tblorderdetails">
+        <PropertyRef Name="pid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="myshopDBEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblcategories" EntityType="Self.tblcategory" />
+    <EntitySet Name="tblimages" EntityType="Self.tblimage" />
+    <EntitySet Name="tblorderdetails" EntityType="Self.tblorderdetail" />
+    <EntitySet Name="tblorders" EntityType="Self.tblorder" />
+    <EntitySet Name="tblproducts" EntityType="Self.tblproduct" />
+    <EntitySet Name="tblusers" EntityType="Self.tbluser" />
+    <AssociationSet Name="FK_tblcategory_tblcategory" Association="Self.FK_tblcategory_tblcategory">
+      <End Role="tblcategory" EntitySet="tblcategories" />
+      <End Role="tblcategory1" EntitySet="tblcategories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblproduct_tblcategory" Association="Self.FK_tblproduct_tblcategory">
+      <End Role="tblcategory" EntitySet="tblcategories" />
+      <End Role="tblproduct" EntitySet="tblproducts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblimages_tblproduct" Association="Self.FK_tblimages_tblproduct">
+      <End Role="tblproduct" EntitySet="tblproducts" />
+      <End Role="tblimages" EntitySet="tblimages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblorderdetails_tblorders" Association="Self.FK_tblorderdetails_tblorders">
+      <End Role="tblorders" EntitySet="tblorders" />
+      <End Role="tblorderdetails" EntitySet="tblorderdetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblorderdetails_tblproduct" Association="Self.FK_tblorderdetails_tblproduct">
+      <End Role="tblproduct" EntitySet="tblproducts" />
+      <End Role="tblorderdetails" EntitySet="tblorderdetails" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

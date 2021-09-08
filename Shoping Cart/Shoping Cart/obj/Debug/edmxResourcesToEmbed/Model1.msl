@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="myshopDBModelStoreContainer" CdmEntityContainer="myshopDBEntities1">
+    <EntitySetMapping Name="tblcategories">
+      <EntityTypeMapping TypeName="myshopDBModel.tblcategory">
+        <MappingFragment StoreEntitySet="tblcategory">
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="cname" ColumnName="cname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblimages">
+      <EntityTypeMapping TypeName="myshopDBModel.tblimage">
+        <MappingFragment StoreEntitySet="tblimages">
+          <ScalarProperty Name="iid" ColumnName="iid" />
+          <ScalarProperty Name="iname" ColumnName="iname" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblorderdetails">
+      <EntityTypeMapping TypeName="myshopDBModel.tblorderdetail">
+        <MappingFragment StoreEntitySet="tblorderdetails">
+          <ScalarProperty Name="did" ColumnName="did" />
+          <ScalarProperty Name="oid" ColumnName="oid" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="pprice" ColumnName="pprice" />
+          <ScalarProperty Name="pqty" ColumnName="pqty" />
+          <ScalarProperty Name="pamount" ColumnName="pamount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblorders">
+      <EntityTypeMapping TypeName="myshopDBModel.tblorder">
+        <MappingFragment StoreEntitySet="tblorders">
+          <ScalarProperty Name="oid" ColumnName="oid" />
+          <ScalarProperty Name="odate" ColumnName="odate" />
+          <ScalarProperty Name="opname" ColumnName="opname" />
+          <ScalarProperty Name="opphone" ColumnName="opphone" />
+          <ScalarProperty Name="opaddress" ColumnName="opaddress" />
+          <ScalarProperty Name="opsaddress" ColumnName="opsaddress" />
+          <ScalarProperty Name="oamount" ColumnName="oamount" />
+          <ScalarProperty Name="ostatus" ColumnName="ostatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblproducts">
+      <EntityTypeMapping TypeName="myshopDBModel.tblproduct">
+        <MappingFragment StoreEntitySet="tblproduct">
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="pname" ColumnName="pname" />
+          <ScalarProperty Name="pprice" ColumnName="pprice" />
+          <ScalarProperty Name="pdetails" ColumnName="pdetails" />
+          <ScalarProperty Name="cid" ColumnName="cid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblusers">
+      <EntityTypeMapping TypeName="myshopDBModel.tbluser">
+        <MappingFragment StoreEntitySet="tblusers">
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="uname" ColumnName="uname" />
+          <ScalarProperty Name="upass" ColumnName="upass" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
